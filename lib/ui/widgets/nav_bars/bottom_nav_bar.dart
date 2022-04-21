@@ -1,6 +1,9 @@
 import 'package:assignment/core/decorations/app_colors.dart';
 import 'package:assignment/core/generated/assets/assets.gen.dart';
+import 'package:assignment/src/cubit/versions_cubit/versions_cubit.dart';
+import 'package:assignment/ui/screens/home_screen/widgets/versions_dialog.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({Key? key}) : super(key: key);
@@ -82,7 +85,15 @@ class _BottomNavBarState extends State<BottomNavBar> {
           _buildIconDetector(icon: Assets.images.profile.path, index: 2),
           Padding(
             padding: const EdgeInsets.only(bottom: 24),
-            child: _buildFloatingButton(onTap: () {}),
+            child: _buildFloatingButton(
+              onTap: () {
+                context.read<VersionsCubit>().fetchVersions();
+                showDialog(
+                  context: context,
+                  builder: (context) => const VersionsDialog(),
+                );
+              },
+            ),
           ),
         ],
       ),
@@ -128,11 +139,5 @@ class _BottomNavBarState extends State<BottomNavBar> {
         ),
       ),
     );
-  }
-
-  void onTap(int index) {
-    setState(() {
-      _currentIndex = index;
-    });
   }
 }

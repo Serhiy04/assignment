@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:assignment/core/generated/assets/assets.gen.dart';
-import 'package:assignment/src/models/currency_model.dart';
+import 'package:assignment/src/models/others/currency_model/currency_model.dart';
 import 'package:assignment/ui/widgets/boxes/crypto_card.dart';
 import 'package:assignment/ui/widgets/buttons/add_new_big_button.dart';
 import 'package:assignment/ui/widgets/buttons/add_new_small_button.dart';

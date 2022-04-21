@@ -1,6 +1,6 @@
 import 'package:assignment/core/decorations/app_colors.dart';
 import 'package:assignment/core/decorations/symbols.dart';
-import 'package:assignment/src/models/currency_model.dart';
+import 'package:assignment/src/models/others/currency_model/currency_model.dart';
 import 'package:flutter/material.dart';
 
 class CryptoCard extends StatelessWidget {

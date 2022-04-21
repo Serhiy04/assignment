@@ -2,9 +2,12 @@ import 'package:assignment/core/decorations/app_colors.dart';
 import 'package:assignment/core/decorations/app_text_styles.dart';
 import 'package:assignment/core/decorations/symbols.dart';
 import 'package:assignment/core/generated/assets/assets.gen.dart';
+import 'package:assignment/src/cubit/base_cubit/base_state.dart';
+import 'package:assignment/src/cubit/versions_cubit/versions_cubit.dart';
 import 'package:assignment/ui/screens/home_screen/widgets/crypto_list.dart';
 import 'package:assignment/ui/widgets/nav_bars/bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
