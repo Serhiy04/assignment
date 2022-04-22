@@ -1,5 +1,5 @@
 import 'package:assignment/core/decorations/theme_data.dart';
-import 'package:assignment/ui/screens/home_screen/home_screen.dart';
+import 'package:assignment/features/presenter/ui/screens/home_screen/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class Application extends StatelessWidget {
